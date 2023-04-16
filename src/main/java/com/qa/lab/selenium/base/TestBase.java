@@ -20,7 +20,7 @@ public class TestBase {
 	private static Properties prop;
 	private static final String CONFIG_FILE = "src/main/java/com/qa/lab/resources/config/configurations.yaml";
 	public static Configurations configs;
-	public static WebDriver driver;
+	public WebDriver driver;
 
 	static {
 		try {
