@@ -17,6 +17,6 @@ import io.cucumber.testng.CucumberOptions;
 		tags = "@jenkins-github"
 		
 		)
-public class CucumberRunner extends AbstractTestNGCucumberTests {
+public class CucumberRunnerTest extends AbstractTestNGCucumberTests {
 
 }

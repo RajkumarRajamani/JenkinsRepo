@@ -5,11 +5,11 @@ import com.qa.lab.selenium.page.HomePageOR;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
-public class HomePageTest {
+public class HomePageValidation {
 	
 	HomePageOR homePage;
 	
-	public HomePageTest() {
+	public HomePageValidation() {
 		homePage = new HomePageOR();
 	}
 	
