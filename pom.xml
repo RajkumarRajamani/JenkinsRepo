@@ -45,7 +45,7 @@
 			</exclusions>
 
 		</dependency>
-
+<!--
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -87,6 +87,7 @@
 			<artifactId>poi</artifactId>
 			<version>3.9</version>
 		</dependency>
+		-->
 
 		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
 		<dependency>
