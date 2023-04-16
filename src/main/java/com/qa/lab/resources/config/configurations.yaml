@@ -1,0 +1,6 @@
+
+browser: Chrome
+applicationUrl: https://www.freshworks.com/
+chromeDriver: src/main/java/com/qa/lab/resources/webdrivers/chromedriver.exe
+webDriverPageLoadTimeout: 20
+webDriverImplicitTimeout: 10
