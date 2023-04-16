@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		plugin = "pretty",
+		plugin = {"pretty", "html:TestOutput/cucumber-report/cucumber-pretty.html"},
 		features = {"src/test/java/com/qa/lab/selenium/features/"},
 		glue = {"com.qa.lab.selenium.stepdef"},
 		dryRun = false,
