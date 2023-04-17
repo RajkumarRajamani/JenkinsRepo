@@ -5,8 +5,10 @@ import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -55,7 +57,16 @@ public class TestBase {
 		switch (browser) {
 		case (Constants.CHROME):
 			System.setProperty("webdriver.chrome.driver", configs.getChromeDriver());
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("enable-automation");
+			options.addArguments("--headless");
+			options.addArguments("--window-size=1920,1080");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-extensions");
+			options.addArguments("--dns-prefetch-disable");
+			options.addArguments("--disable-gpu");
+			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			driver = new ChromeDriver(options);
 			break;
 		case (Constants.FIREFOX):
 			System.setProperty("webdriver.gecko.driver", configs.getFirefoxDriver());	

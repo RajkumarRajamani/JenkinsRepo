@@ -1,5 +1,5 @@
 
-browser: Firefox
+browser: Chrome
 applicationUrl: https://www.freshworks.com/
 chromeDriver: src/main/java/com/qa/lab/resources/webdrivers/chromedriver.exe
 firefoxDriver: src/main/java/com/qa/lab/resources/webdrivers/geckodriver.exe
