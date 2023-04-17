@@ -8,6 +8,7 @@ public class Configurations {
 	private String browser;
 	private String applicationUrl;
 	private String chromeDriver;
+	private String firefoxDriver;
 	private long webDriverPageLoadTimeout;
 	private long webDriverImplicitTimeout;
 	

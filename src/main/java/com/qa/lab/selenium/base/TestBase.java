@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
@@ -57,9 +58,11 @@ public class TestBase {
 			driver = new ChromeDriver();
 			break;
 		case (Constants.FIREFOX):
+			System.setProperty("webdriver.gecko.driver", configs.getFirefoxDriver());	
+			driver = new FirefoxDriver();
 			break;
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(configs.getWebDriverPageLoadTimeout(), TimeUnit.SECONDS);
