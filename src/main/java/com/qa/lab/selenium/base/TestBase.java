@@ -65,7 +65,7 @@ public class TestBase {
 		case (Constants.FIREFOX):
 			System.setProperty("webdriver.gecko.driver", configs.getFirefoxDriver());
 			FirefoxOptions fireOption = new FirefoxOptions();
-			fireOption.addArguments("--display=0");
+			fireOption.addArguments("--display=n");
 			driver = new FirefoxDriver(fireOption);
 			break;
 		}
