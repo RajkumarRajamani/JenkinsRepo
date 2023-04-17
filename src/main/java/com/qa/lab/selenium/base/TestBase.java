@@ -59,7 +59,7 @@ public class TestBase {
 		case (Constants.CHROME):
 			System.setProperty("webdriver.chrome.driver", configs.getChromeDriver());
 			ChromeOptions chromeOption = new ChromeOptions();
-			chromeOption.addArguments("--display=0");
+			chromeOption.setHeadless(false);
 			driver = new ChromeDriver(chromeOption);
 			break;
 		case (Constants.FIREFOX):
