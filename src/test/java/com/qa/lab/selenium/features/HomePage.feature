@@ -10,3 +10,6 @@ Feature: Freshwork Homepage is develope
     Examples: 
       | name  | value | status  |
       | name1 |     5 | success |
+      | name1 |     5 | success |
+      | name1 |     5 | success |
+      | name1 |     5 | success |
