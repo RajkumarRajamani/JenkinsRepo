@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
@@ -57,11 +58,15 @@ public class TestBase {
 		switch (browser) {
 		case (Constants.CHROME):
 			System.setProperty("webdriver.chrome.driver", configs.getChromeDriver());
-			driver = new ChromeDriver();
+			ChromeOptions chromeOption = new ChromeOptions();
+			chromeOption.addArguments("--display=0");
+			driver = new ChromeDriver(chromeOption);
 			break;
 		case (Constants.FIREFOX):
-			System.setProperty("webdriver.gecko.driver", configs.getFirefoxDriver());	
-			driver = new FirefoxDriver();
+			System.setProperty("webdriver.gecko.driver", configs.getFirefoxDriver());
+			FirefoxOptions fireOption = new FirefoxOptions();
+			fireOption.addArguments("--display=0");
+			driver = new FirefoxDriver(fireOption);
 			break;
 		}
 

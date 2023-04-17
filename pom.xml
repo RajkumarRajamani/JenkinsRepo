@@ -45,46 +45,46 @@
 			</exclusions>
 
 		</dependency>
-<!--
+		<!--
 		<dependency>
 			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
+		<artifactId>poi</artifactId>
 			<version>3.16-beta2</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
+		<artifactId>poi-ooxml</artifactId>
 			<version>3.9</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml-schemas</artifactId>
+		<artifactId>poi-ooxml-schemas</artifactId>
 			<version>3.9</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-scratchpad</artifactId>
+		<artifactId>poi-scratchpad</artifactId>
 			<version>3.9</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
-			<artifactId>ooxml-schemas</artifactId>
+		<artifactId>ooxml-schemas</artifactId>
 			<version>1.1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
-			<artifactId>openxml4j</artifactId>
+		<artifactId>openxml4j</artifactId>
 			<version>1.0-beta</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
+		<artifactId>poi</artifactId>
 			<version>3.9</version>
 		</dependency>
 		-->
@@ -172,6 +172,14 @@
 			<groupId>com.fasterxml.jackson.datatype</groupId>
 			<artifactId>jackson-datatype-jsr310</artifactId>
 			<version>${jackson.version}</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.3.2</version>
 		</dependency>
 
 
